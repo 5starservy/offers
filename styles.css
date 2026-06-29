@@ -120,6 +120,53 @@ ul{ list-style:none; }
   margin-bottom:64px;
 }
 
+/* ===== Rates ===== */
+.rates{
+  max-width:1180px; margin:0 auto;
+  padding:24px 24px 40px;
+}
+.rates__inner{ }
+
+.rate-card{
+  max-width:380px; 
+  margin:0 auto;
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px 22px;
+  text-align:left;
+}
+.rate-card__row{
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+}
+.rate-card__row:nth-of-type(2){ border-bottom:none; }
+.rate-card__label{
+  font-size:0.88rem;
+  color:var(--ink-dim);
+}
+.rate-card__label small{
+  display:block;
+  font-size:0.74rem;
+  margin-top:2px;
+}
+.rate-card__value{
+  font-family:var(--mono);
+  font-size:1.15rem;
+  font-weight:600;
+  color:var(--blue);
+}
+.rate-card__cta{
+  display:block;
+  text-align:center;
+  margin-top:14px;
+  font-size:0.86rem;
+  font-weight:600;
+  color:var(--amber);
+}
+.rate-card__cta:hover{ color:#FFA161; }
+
 .hero__ticker{
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
@@ -202,6 +249,14 @@ ul{ list-style:none; }
 .card--blue .card__media{ background-color:#161B24; }
 .card--amber .card__media{ background-color:#231a14; }
 .card__placeholder{ font-size:3.2rem; opacity:0.85; }
+.card__icon{
+  font-style:normal;
+  font-family:var(--display);
+  font-size:2.6rem;
+  opacity:0.5;
+}
+.card--blue .card__icon{ color:var(--blue); }
+.card--amber .card__icon{ color:var(--amber); }
 
 .stock{
   position:absolute; top:12px; left:12px;
@@ -216,29 +271,52 @@ ul{ list-style:none; }
 .stock--low{ color:var(--amber); }
 
 .card__body{ padding:20px; }
+.card__kicker{
+  display:inline-block;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  margin-bottom:8px;
+}
 .card__body h3{
   font-size:1.05rem;
-  margin-bottom:6px;
+  margin-bottom:14px;
+  line-height:1.3;
 }
-.card__price{
-  font-family:var(--mono);
-  font-size:1.5rem;
-  font-weight:600;
+.price-block{
   margin-bottom:16px;
+  padding-bottom:16px;
+  border-bottom:1px solid var(--line);
 }
-.card__price span{ font-size:0.95rem; color:var(--ink-dim); }
+.price-block__main{
+  font-family:var(--mono);
+  font-size:1.7rem;
+  font-weight:600;
+  display:block;
+}
+.price-block__main small{
+  font-size:0.95rem;
+  font-weight:500;
+  color:var(--ink-dim);
+}
+.price-block__example{
+  font-size:0.8rem;
+  color:var(--ink-dim);
+  margin-top:8px;
+  line-height:1.45;
+}
 
 .specs{
   display:flex; flex-direction:column; gap:9px;
   margin-bottom:18px;
-  padding-top:14px;
-  border-top:1px solid var(--line);
 }
 .specs li{
-  display:flex; justify-content:space-between;
+  display:flex; justify-content:space-between; gap:12px;
   font-size:0.84rem;
 }
-.specs li span{ color:var(--ink-dim); }
+.specs li span{ color:var(--ink-dim); flex-shrink:0; }
 .specs li b{ font-weight:600; text-align:right; }
 
 .card__cta{
@@ -292,4 +370,75 @@ ul{ list-style:none; }
 @media (max-width:720px){
   .nav{ display:none; }
   .footer{ flex-direction:column; gap:6px; text-align:center; }
+}
+
+/* ===== Productos ===== */
+
+.product-list{
+    max-width:750px;
+    margin:auto;
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+}
+
+.product-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 24px;
+    border-bottom:1px solid var(--line);
+    transition:.2s;
+}
+
+.product-row:last-child{
+    border-bottom:none;
+}
+
+.product-row:hover{
+    background:#20242b;
+}
+
+.product-info{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.product-icon{
+    font-size:2rem;
+    width:42px;
+    text-align:center;
+}
+
+.product-info h3{
+    font-size:1rem;
+    margin-bottom:4px;
+    font-weight:600;
+}
+
+.product-size{
+    color:var(--ink-dim);
+    font-size:.85rem;
+    font-family:var(--mono);
+}
+
+.product-price{
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--amber);
+    font-family:var(--mono);
+}
+
+@media(max-width:600px){
+
+    .product-row{
+        padding:16px;
+    }
+
+    .product-price{
+        font-size:1.15rem;
+    }
+
 }
