@@ -1,0 +1,47 @@
+{
+  "rates": {
+    "cupCash": "600",
+    "cupCard": "750",
+    "clc": "1*1",
+    "prp": "1*1",
+    "mlc": "1.20*1usd"
+  },
+
+  "products": [
+    {
+      "name":"Café La Llave",
+      "size":"10 oz",
+      "price":"9.50"
+    },
+    {
+      "name":"Paquete de Pollo",
+      "size":"10 lb",
+      "price":"14.50"
+    },
+    {
+      "name":"Aceite",
+      "size":"900 ml",
+      "price":"4.00"
+    },
+    {
+      "name":"Arroz",
+      "size":"1 kg",
+      "price":"1.50"
+    },
+    {
+      "name":"Frijoles negros",
+      "size":"1 kg",
+      "price":"1.90"
+    },
+    {
+      "name":"Leche en polvo",
+      "size":"1 kg",
+      "price":"8.75"
+    },
+    {
+      "name":"Azúcar blanca",
+      "size":"1 kg",
+      "price":"2.10"
+    }
+  ]
+}
