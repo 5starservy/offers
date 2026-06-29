@@ -1,7 +1,7 @@
 {
   "rates": {
-    "cupCash": "850",
-    "cupCard": "750",
+    "cupCash": "600",
+    "cupCard": "850",
     "clc": "1*1",
     "prp": "1*1",
     "mlc": "1.20*1usd"
