@@ -1,9 +1,24 @@
+let lastDataString = "";
+
 async function loadData() {
     try {
         const response = await fetch("data.json?v=" + Date.now(), {
             cache: "no-store"
         });
         const data = await response.json();
+
+        const currentDataString = JSON.stringify(data);
+
+        if (currentDataString !== lastDataString) {
+            lastDataString = currentDataString;
+
+            const ahora = new Date();
+            const horaTexto = ahora.toLocaleTimeString('es', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            document.getElementById("last-updated").textContent = horaTexto;
+        }
 
         //-----------------------------------
         // TASAS
