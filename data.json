@@ -3,7 +3,7 @@
     "cupCash": "600",
     "cupCard": "750",
     "clc": "1*1",
-    "prp": "1*2",
+    "prp": "1*1",
     "mlc": "1.20*1usd"
   },
 
@@ -42,6 +42,11 @@
       "name":"Azúcar blanca",
       "size":"1 kg",
       "price":"2.10"
+    },
+    {
+      "name":"Azúcar parda",
+      "size":"1 kg",
+      "price":"1.90"
     }
   ]
 }
