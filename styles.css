@@ -141,7 +141,7 @@ ul{ list-style:none; }
   padding:10px 0;
   border-bottom:1px solid var(--line);
 }
-.rate-card__row:nth-of-type(2){ border-bottom:none; }
+.rate-card__row:last-child{ border-bottom:none; }
 .rate-card__label{
   font-size:0.88rem;
   color:var(--ink-dim);
