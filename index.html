@@ -157,56 +157,8 @@
         <h2><span class="tag tag--amber">02</span> Productos</h2>
         <p>Puede pedir productos y dinero en el mismo pedido. Si necesita un producto distinto a los siguientes. ¡Háganos saber!</p>
       </div>
-      <div class="product-list">
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Café La Llave</h3><span class="product-size">10 oz</span>
-            </div>
-          </div><span class="product-price">$9.50</span>
-        </div>
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Paquete de Pollo</h3><span class="product-size">10 lb</span>
-            </div>
-          </div><span class="product-price">$14.50</span>
-        </div>
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Aceite</h3><span class="product-size">900 ml</span>
-            </div>
-          </div><span class="product-price">$4.00</span>
-        </div>
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Arroz</h3><span class="product-size">1 kg</span>
-            </div>
-          </div><span class="product-price">$1.50</span>
-        </div>
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Frijoles negros</h3><span class="product-size">1 kg</span>
-            </div>
-          </div><span class="product-price">$1.90</span>
-        </div>
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Leche en polvo</h3><span class="product-size">1 kg</span>
-            </div>
-          </div><span class="product-price">$8.75</span>
-        </div>
-        <div class="product-row">
-          <div class="product-info">
-            <div>
-              <h3>Azúcar blanca</h3><span class="product-size">1 kg</span>
-            </div>
-          </div><span class="product-price">$2.10</span>
-        </div>
+      <div class="product-list" id="product-list">
+        
       </div>
     </section>
     <section class="rates" id="rates">
@@ -223,13 +175,13 @@
             <span class="rate-card__label">CUT <small>(nacional en tarjeta)</small></span> <span class="rate-card__value" id="cupCard"></span>
           </div>
           <div class="rate-card__row">
-            <span class="rate-card__label">CLC <small>(tarjeta clásica)</small></span> <span class="rate-card__value">1*1</span>
+            <span class="rate-card__label">CLC <small>(tarjeta clásica)</small></span> <span class="rate-card__value" id="clc"></span>
           </div>
           <div class="rate-card__row">
-            <span class="rate-card__label">PRP <small>(prepago bandec)</small></span> <span class="rate-card__value">1*1</span>
+            <span class="rate-card__label">PRP <small>(prepago bandec)</small></span> <span class="rate-card__value" id="prp"></span>
           </div>
           <div class="rate-card__row">
-            <span class="rate-card__label">MLC <small>(tarjeta MLC)</small></span> <span class="rate-card__value">1.20*1usd</span>
+            <span class="rate-card__label">MLC <small>(tarjeta MLC)</small></span> <span class="rate-card__value" id="mlc"></span>
           </div>
         </div>
       </div>
